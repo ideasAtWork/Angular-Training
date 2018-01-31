@@ -1,6 +1,7 @@
 # Webpack Intro Tutorial
 
 1. Clone the project and inspect the files. Observe `index.js`, `mailOperations.js`.
+
 2. Install Babel and Webpack through npm.
 ```
 npm install babel-loader babel-core babel-preset-env webpack —save-dev
@@ -40,6 +41,6 @@ devServer: {  contentBase: path.join(__dirname, "dist") }
 webpack-dev-server --progress --debug --inline --host 0.0.0.0
 ```
 
-8. Open http://localhost:8080
+10. Open http://localhost:8080
     (Bonus: page reloads on changes)
-9. add webpack-dev-server-command as a npm script
+11. add webpack-dev-server-command as a npm script
