@@ -18,5 +18,15 @@ module.exports = {
   },
 };
 
+
+
+
+
+
+
 // var HtmlWebpackPlugin = require('html-webpack-plugin');
 // plugins: [new HtmlWebpackPlugin()]
+
+// devServer: {
+//   contentBase: path.join(__dirname, "dist")
+// },

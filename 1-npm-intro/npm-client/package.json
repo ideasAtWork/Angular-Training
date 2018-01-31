@@ -7,11 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "npm-test-30jan": "^1.0.0"
-  },
+  "author": "Cassi Lup <cassi.lup@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",

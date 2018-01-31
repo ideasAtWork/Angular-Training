@@ -1,5 +1,5 @@
-import { add } from 'npm-test-30jan';
+import { add } from '<our newly published package>';
 
-var body = document.querySelector('body');
+const body = document.querySelector('body');
 
-body.textContent = '2 + 3 = ' + add(2, 3);
+body.textContent = `2 + 3 = ${add(2, 3)}`;
