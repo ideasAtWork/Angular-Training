@@ -3,11 +3,17 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { HighlightDirective } from './highlight.directive';
+import { HighlightHoverDirective } from './highlight-hover.directive';
+import { ExponentialStrengthPipe } from './exponential-strength.pipe';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HighlightDirective,
+    HighlightHoverDirective,
+    ExponentialStrengthPipe
   ],
   imports: [
     BrowserModule
