@@ -2,15 +2,15 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import * as io from 'socket.io-client';
 
-export interface Message {
-  text:string;
-}
+interface Message {
+  text: string;
+};
 
 @Injectable()
 export class ChatService {
   private url = 'http://localhost:3000';
   private socket;
-  private messages: Message[] = [];
+  private messages:Message[] = [];
   private connection;
 
   constructor() {

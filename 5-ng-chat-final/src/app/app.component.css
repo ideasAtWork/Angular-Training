@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #fffaf5;
+}
+
+.app-wrapper {
+  position: absolute;
+  top: 20vh;
+  bottom: 20vh;
+  left: 0;
+  right: 0;
+  max-width: 50%;
+  margin: 0 auto;
+  min-width: 310px;
+  min-height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid lightgray;
+  background: white;
+  box-shadow: 0 10px 50px -24px;
+}

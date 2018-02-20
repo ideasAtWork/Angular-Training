@@ -1,0 +1,21 @@
+.message-list-wrapper {
+  overflow: scroll;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.message-list-wrapper .message-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 60px;
+}
+
+.message-list-wrapper .message-list li {
+  padding: 10px;
+  font-weight: 300;
+}
+
+.message-list-wrapper .message-list li:nth-child(odd) {
+  background-color: #eee;
+}
