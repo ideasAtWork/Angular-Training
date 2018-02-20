@@ -1,0 +1,9 @@
+.wrapper {
+  max-width: 600px;
+  background: lightblue;
+  border: 3px dashed gray;
+  padding: 30px;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #333;
+}
