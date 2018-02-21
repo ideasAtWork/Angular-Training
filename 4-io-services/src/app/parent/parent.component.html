@@ -1,5 +1,10 @@
 <div class="wrapper">
   parent works!
 
-  <app-child></app-child>
+  <button (click)="executeInParent()">click me</button>
+
+  <app-child 
+    [message]="2 + 2"
+    (triggeredFromChild)="executeInParent()">
+  </app-child>
 </div>
