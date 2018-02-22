@@ -1,4 +1,6 @@
-<div class="app-wrapper">
-  <app-message-list [messages]="messages"></app-message-list>
-  <app-new-message></app-new-message>
+<div>
+  <a routerLink="/login" routerLinkActive="active-link">Login</a>
+  <a [routerLink]="['/homepage']" routerLinkActive="active-link">Home</a>
 </div>
+
+<router-outlet></router-outlet>
