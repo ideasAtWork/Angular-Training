@@ -1,0 +1,7 @@
+<div class="message-list-wrapper">
+  <ul class="message-list">
+    <li *ngFor="let message of messages; let i = index">
+      {{i + 1}}: {{message.text}}
+    </li>
+  </ul>
+</div>
