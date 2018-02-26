@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChatService } from '../../shared/chat.service';
 
 @Component({
   selector: 'app-new-message-advanced',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new-message-advanced.component.css']
 })
 export class NewMessageAdvancedComponent implements OnInit {
+  default: string;
 
-  constructor() { }
+  constructor(private chatService:ChatService) {
+    this.default = 'Write your message here...';
+  }
 
   ngOnInit() {
   }
 
+  sendMessage = (text:any) => {
+    this.chatService.sendMessage(text.value);
+    text.value = "";
+  };
 }

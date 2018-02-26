@@ -1,3 +1,4 @@
-<p>
-  new-message-advanced works!
-</p>
+<div class="new-message-wrapper">
+  <input type="text" class="new-message" #newMessageInput (keyup.enter)="sendMessage(newMessageInput)" placeholder="{{default}}"/>
+  <button type="text" class="btn-send" (click)="sendMessage(newMessageInput);">Send</button>
+</div>

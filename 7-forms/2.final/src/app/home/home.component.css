@@ -9,7 +9,7 @@
   min-width: 310px;
   min-height: 300px;
   border-radius: 10px;
-  overflow: hidden;
+  border-top-right-radius: 0;
   border: 1px solid lightgray;
   background: white;
   box-shadow: 0 10px 50px -24px;
@@ -19,18 +19,27 @@
 
 .advanced-toggle {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -21px;
+  right: -1px;
   font-family: sans-serif;
   color: #666;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 12px;
-  background: pink;
-  border-bottom-left-radius: 7px;
-  padding: 5px 8px;
+  font-size: 7px;
+  background: white;
+  border-top-left-radius: 7px;
+  padding: 1px 5px;
+  border-top-right-radius: 7px;
+  border: 1px solid lightgray;
+  border-bottom: 0;
+}
+.advanced-toggle label {
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 
 app-message-list {
   flex: 1;
+  overflow: scroll;
 }

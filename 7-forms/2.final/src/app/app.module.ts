@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+  import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -8,7 +8,7 @@ import { NewMessageComponent } from './components/new-message/new-message.compon
 import { ChatService } from './shared/chat.service';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { NewMessageAdvancedComponent } from './new-message-advanced/new-message-advanced.component';
+import { NewMessageAdvancedComponent } from './components/new-message-advanced/new-message-advanced.component';
 
 @NgModule({
   declarations: [
