@@ -1,26 +1,39 @@
 <div class="new-message-wrapper">
-  <form>
+  <form #chatForm="ngForm"
+        (ngSubmit)="submitForm(chatForm)">
     <div class="top">
       <label>
-        <input type="checkbox"/>
+        <input type="checkbox"
+          [(ngModel)]="model.highlighted"
+          name="highlighted"
+          />
         Highlighted
       </label>
 
       <input type="text"
             placeholder="Hover Text"
-            [(ngModel)]="ourMessage"
-            [ngModelOptions]="{standalone: true}"/>
+            [(ngModel)]="model.hoverText"
+            name="hoverText"/>
     </div>
     {{ourMessage}}
     <div class="bottom">
       <input type="text"
+            required
             class="new-message"
             #newMessageInput
             (keyup.enter)="sendMessage(newMessageInput)" 
             placeholder="{{default}}"
-            [(ngModel)]="ourMessage"
-            [ngModelOptions]="{standalone: true}"/>
-      <input type="submit" class="btn-send" (click)="sendMessage(newMessageInput);" value="Send"/>
+            [(ngModel)]="model.contents"
+            name="contents123"/>
+
+      <input type="submit"
+             class="btn-send"
+             [disabled]="!chatForm.form.valid"
+             [ngClass]="{ 
+               valid: chatForm.form.valid,
+               invalid: !chatForm.form.valid
+              }"
+             value="Send"/>
     </div>
   </form>
 </div>

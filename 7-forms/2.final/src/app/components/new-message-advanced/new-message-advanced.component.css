@@ -43,6 +43,15 @@ input.new-message {
   background-color: #ddd;
 }
 
+.btn-send[disabled] {
+  opacity: .5;
+}
+
 .btn-send:active {
   background-color: #ccc;
+}
+
+input.ng-invalid {
+  border-left: 2px solid red;
+  margin-left: -2px;
 }
