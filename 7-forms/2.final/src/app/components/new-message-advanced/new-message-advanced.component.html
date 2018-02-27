@@ -1,4 +1,26 @@
 <div class="new-message-wrapper">
-  <input type="text" class="new-message" #newMessageInput (keyup.enter)="sendMessage(newMessageInput)" placeholder="{{default}}"/>
-  <button type="text" class="btn-send" (click)="sendMessage(newMessageInput);">Send</button>
+  <form>
+    <div class="top">
+      <label>
+        <input type="checkbox"/>
+        Highlighted
+      </label>
+
+      <input type="text"
+            placeholder="Hover Text"
+            [(ngModel)]="ourMessage"
+            [ngModelOptions]="{standalone: true}"/>
+    </div>
+    {{ourMessage}}
+    <div class="bottom">
+      <input type="text"
+            class="new-message"
+            #newMessageInput
+            (keyup.enter)="sendMessage(newMessageInput)" 
+            placeholder="{{default}}"
+            [(ngModel)]="ourMessage"
+            [ngModelOptions]="{standalone: true}"/>
+      <input type="submit" class="btn-send" (click)="sendMessage(newMessageInput);" value="Send"/>
+    </div>
+  </form>
 </div>

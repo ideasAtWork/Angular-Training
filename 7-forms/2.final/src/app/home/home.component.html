@@ -5,7 +5,9 @@
 
   <div class="advanced-toggle">
     <label>
-      <input type="checkbox" (change)="advancedMode = !advancedMode" />
+      <input type="checkbox" 
+             [checked]="advancedMode"
+             (change)="advancedMode = !advancedMode" />
       Advanced
     </label>
   </div>

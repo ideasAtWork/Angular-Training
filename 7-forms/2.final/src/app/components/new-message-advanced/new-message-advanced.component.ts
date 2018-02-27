@@ -9,6 +9,8 @@ import { ChatService } from '../../shared/chat.service';
 export class NewMessageAdvancedComponent implements OnInit {
   default: string;
 
+  ourMessage: string = "default message";
+
   constructor(private chatService:ChatService) {
     this.default = 'Write your message here...';
   }
