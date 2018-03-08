@@ -1,0 +1,45 @@
+.app-wrapper {
+  position: absolute;
+  top: 20vh;
+  bottom: 20vh;
+  left: 0;
+  right: 0;
+  max-width: 50%;
+  margin: 0 auto;
+  min-width: 310px;
+  min-height: 300px;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border: 1px solid lightgray;
+  background: white;
+  box-shadow: 0 10px 50px -24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.advanced-toggle {
+  position: absolute;
+  top: -21px;
+  right: -1px;
+  font-family: sans-serif;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 7px;
+  background: white;
+  border-top-left-radius: 7px;
+  padding: 1px 5px;
+  border-top-right-radius: 7px;
+  border: 1px solid lightgray;
+  border-bottom: 0;
+}
+.advanced-toggle label {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+app-message-list {
+  flex: 1;
+  overflow: scroll;
+}

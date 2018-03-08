@@ -1,0 +1,19 @@
+<div class="login-form">
+  <img class="avatar" *ngIf="this.avatarUrl" [src]="this.avatarUrl" />
+  <br/>
+
+  <label>
+    Username<br/>
+    <input type="text" #username (change)="getAvatarUrl(this.username.value)" />
+  </label>
+  <br/><br/>
+
+  <label>
+    Password<br/>
+    <input type="password"/>
+  </label>
+  <br/>
+  <br/>
+
+  <button class="btn login-btn" routerLink="/homepage">Login</button>
+</div>

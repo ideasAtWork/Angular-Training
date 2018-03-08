@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #fffaf5;
+  color: #333;
+}
+
+.nav {
+  background: lightskyblue;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: bold;
+  font-size: 80%;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: -8px;
+  padding: 10px 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  margin-right: 10px;
+}
+
+.nav a.active-link {
+  color: white;
+}
+.active-link:after {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: -5px;
+  right: -5px;
+  height: 4px;
+  background: #fffaf5;
+}

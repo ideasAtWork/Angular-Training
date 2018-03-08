@@ -1,0 +1,39 @@
+<div class="new-message-wrapper">
+  <form #chatForm="ngForm"
+        (ngSubmit)="submitForm(chatForm)">
+    <div class="top">
+      <input type="text"
+            placeholder="Hover Text"
+            [(ngModel)]="model.hoverText"
+            name="hoverText"/>
+
+      <label>
+          <input type="checkbox"
+            [(ngModel)]="model.highlighted"
+            name="highlighted"
+            />
+          Highlighted
+        </label>
+    </div>
+    <!-- {{ourMessage}} -->
+    <div class="bottom">
+      <input type="text"
+            required
+            class="new-message"
+            #newMessageInput
+            (keyup.enter)="sendMessage(newMessageInput)"
+            placeholder="{{default}}"
+            [(ngModel)]="model.contents"
+            name="contents123"/>
+
+      <input type="submit"
+             class="btn-send"
+             [disabled]="!chatForm.form.valid"
+             [ngClass]="{
+               valid: chatForm.form.valid,
+               invalid: !chatForm.form.valid
+              }"
+             value="Send"/>
+    </div>
+  </form>
+</div>
